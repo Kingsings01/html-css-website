@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-.header {
+ .header {
   min-height: 100vh;
   width: 100%;
   background-image: url(images/page\ image.jpeg);
@@ -21,14 +21,44 @@ nav img {
   width: 100px;
   border-radius: 10px;
 }
-.nav-links {
+nav-links {
   flex: 1;
   text-align: right;
 }
-.nav-links ul li {
+nav ul {
   list-style: none;
-  display: inline-block;
+  display: flex;
   padding: 8px 12px;
+  text-align: center;
   position: relative;
 }
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
 
+.ggg {
+  text-align: center;
+  margin-top: 5rem;
+  align-self: center;
+}
+div h1 {
+  color: brown;
+}
+div p {
+  width: 80%;
+  padding: 5% 10%;
+}
+/*
+.More-btn {
+  padding: 10px 10px 0px 10px;
+  border: none;
+  border-radius: 5px 5px 0px 0px;
+  background-color: rgba(182, 233, 230, 0.384);
+  height: 25px;
+  cursor: pointer;
+  margin-top: 50px;
+}
+.More-btn:hover {
+  background-color: rgba(211, 48, 48, 0.411);
+} */
