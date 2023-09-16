@@ -1,8 +1,8 @@
-*{
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
-  /* font-family: 'Roboto', sans-serif; */
 }
 
  .header {
@@ -59,27 +59,57 @@ nav li:hover::after {
 .text-div {
   text-align: center;
   margin-top: 5rem;
-  align-self: center;
 }
 div h1 {
   color: brown;
+  font-size: 60px;
+  font-family: 'Roboto', serif;
 }
 div p {
-  width: 80%;
-  padding: 5% 10%;
+  color: rgb(63, 6, 6);
+  width: 75%;
+  margin: 3% 12.5% ;
+  font-size: 15px;
 }
 
-.More-btn {
-  padding: 10px 10px 0px 10px;
-  border: none;
-  border-radius: 5px 5px 0px 0px;
-  background-color: rgba(182, 233, 230, 0.384);
-  height: 25px;
+.hero-btn {
   cursor: pointer;
-  margin-top: 50px;
+  color: white;
+  border: 1px solid white;
+  font-size: 13px;
+  padding: 12px 34px;
+  background: transparent;
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
 }
-.More-btn:hover {
-  background-color: rgba(211, 48, 48, 0.411);
-  transition: 0.5s;
-  /* color: white; */
+.hero-btn:hover {
+  border: 1px solid #f44336;
+  background: brown;
+  transition: 1s;
+}
+
+@media(max-width: 700px) {
+  .text-div h1{
+    font-size: 20px;
+  }
+  /* .nav-links{
+    position: absolute;
+    background-color: #f44336;
+  } */
+}
+_________________________
+.container {
+  background-color: #f0f0f0;
+}
+.intro-div, .contact-us {
+  width: 50%;
+  padding: 10px;
+  height: 200px;
+}
+.intro-div {
+  float: left;
+}
+.contact-us {
+  float: right;
 }
