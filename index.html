@@ -9,25 +9,35 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="styles.css" />
     <title>Html & Css Website</title>
   </head>
   <body>
+    <!------------- Header Section------------>
     <section class="header">
       <nav>
         <a href="index.html">
-          <img src="images/energy logo.jpg" alt="Logo" class="logo" />
+          <img src="images/page logo.jpg" alt="Logo" class="logo" />
         </a>
-        <div class="nav-links">
-          <li><a href="">HOME</a></li>
-          <li><a href="">ABOUT</a></li>
-          <li><a href="">COURSE</a></li>
-          <li><a href="">BLOG</a></li>
-          <li><a href="">CONTENT</a></li>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">COURSE</a></li>
+            <li><a href="">BLOG</a></li>
+            <li><a href="">CONTENT</a></li>
+          </ul>
         </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
       </nav>
       <div class="text-div">
-        <h1>World's Biggest University</h1>
+        <!-- <h1>World's Biggest University</h1> -->
+        <h1>Vision,<br />Sometimes Everything You Need.</h1>
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum vitae,
           <br />
@@ -38,43 +48,219 @@
         <a href="" class="hero-btn">Click To Know More</a>
       </div>
     </section>
-    <section class="footer">
-      <div class="container">
-        <div class="intro-div">
-          About us
+
+    <!------------- Courses Section ------------>
+    <section class="course">
+      <h1>Courses We Offer</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, ab
+        atque. Libero ullam modi reprehenderit nihil eligendi officia id, eum
+        aliquid iste, similique delectus consequuntur aut repellendus tempora
+        quibusdam laudantium.
+      </p>
+
+      <div class="row">
+        <div class="course-col">
+          <h3>Intermediate</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, alias
-            non fugit eius quod quo! Ipsam vitae voluptatem deserunt saepe
-            aperiam reiciendis labore velit. Ex maxime natus cum perspiciatis
-            omnis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
+            consectetur rerum dolores numquam minus nobis perferendis
+            voluptatibus ipsum in dolor culpa, officia eveniet! Recusandae
+            tempora accusamus officia praesentium sunt dolore!
           </p>
         </div>
-        <div class="contact-us">
-          Send us a mail
+        <div class="course-col">
+          <h3>Degree</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit, ratione?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
+            consectetur rerum dolores numquam minus nobis perferendis
+            voluptatibus ipsum in dolor culpa, officia eveniet! Recusandae
+            tempora accusamus officia praesentium sunt dolore!
           </p>
-          <ul>
-            <li>Name: ..................</li>
-            <li>Email address: ..................</li>
-            <li>Message: ..................</li>
-          </ul>
+        </div>
+        <div class="course-col">
+          <h3>Post Graduate</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
+            consectetur rerum dolores numquam minus nobis perferendis
+            voluptatibus ipsum in dolor culpa, officia eveniet! Recusandae
+            tempora accusamus officia praesentium sunt dolore!
+          </p>
         </div>
       </div>
     </section>
+
+    <!------------- Courses Section ------------>
+    <section class="campus">
+      <h1>Our Global Campus</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+        quisquam, rerum explicabo velit atque ipsam asperiores? Ad earum rerum
+        quae inventore deserunt eius commodi iure, nulla qui dignissimos at
+        deleniti.
+      </p>
+
+      <div class="row">
+        <div class="campus-col">
+          <img src="images/IMG_6191 (2).PNG" alt="London campus" />
+          <div class="layer">
+            <h3>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+              LONDON
+            </h3>
+          </div>
+        </div>
+        <div class="campus-col">
+          <img src="images/Buterfly.webp" alt="New York campus" />
+          <div class="layer">
+            <h3>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+              NEW YORK
+            </h3>
+          </div>
+        </div>
+        <div class="campus-col">
+          <img src="images/Water.jpeg" alt="Washington campus" />
+          <div class="layer">
+            <h3>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+              WASHINGTON
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!------------- Facility Section ------------>
+    <section class="facilities">
+      <h1>Our Facilities</h1>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam quo
+        voluptate debitis. Id voluptate culpa ipsam sed saepe est doloremque ea
+        molestiae possimus, obcaecati soluta distinctio odit libero optio
+        nesciunt!
+      </p>
+
+      <div class="row">
+        <div class="facilities-col">
+          <img src="images/3D butterfly.jpg" alt="Library" />
+          <!-- <img src="images/pokemon_PNG86.png" alt="" /> -->
+          <h3>World Class Library</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.molestiae
+            possimus obcaecati.
+          </p>
+        </div>
+        <div class="facilities-col">
+          <img src="images/IMG_6584.JPG" alt="Play ground" />
+          <!-- <img src="images/pokemon_PNG49.png" alt="" /> -->
+          <h3>Largest Play Ground</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.molestiae
+            possimus obcaecati.
+          </p>
+        </div>
+        <div class="facilities-col">
+          <img src="images/IMG_6565.JPG" alt="People eating" />
+          <!-- <img src="images/Pichirisu.png" alt="" /> -->
+          <h3>Tasty And Healthy Food</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.molestiae
+            possimus obcaecati.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!------------- Testimonial Section ------------>
+    <section class="testimonial">
+      <h1>Testimonials.<br />What Our Students Says</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+        molestiae laboriosam voluptatibus, velit saepe inventore, quas culpa
+        laudantium nesciunt nostrum ab! Dolorem, labore sint? Itaque est labore
+        corporis quam vero!
+      </p>
+
+      <div class="row">
+        <div class="testinmonial-col">
+          <img src="images/Pichirisu.png" alt="User1" />
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+              eos maxime distinctio in eum minus eaque necessitatibus
+              reiciendis, quae voluptatum deserunt similique praesentium itaque
+              nemo, odit suscipit doloremque quo dolorum!
+            </p>
+            <h3>Christine Berkley</h3>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+        </div>
+        <div class="testinmonial-col">
+          <img src="images/pokemon_PNG86.png" alt="User2" />
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+              eos maxime distinctio in eum minus eaque necessitatibus
+              reiciendis, quae voluptatum deserunt similique praesentium itaque
+              nemo, odit suscipit doloremque quo dolorum!
+            </p>
+            <h3>David Byer</h3>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!------------- Call To Action Section ------------>
+    <section class="cta">
+      <h1>
+        Enroll For Our Various Online Courses <br />
+        Anywhere In The World
+      </h1>
+      <a href="" class="hero-btn">CONTACT US</a>
+    </section>
+
+    <!------------- Footer Section ------------>
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, eum
+        quod! Sequi, nulla. <br />Voluptate vitae qui laudantium placeat
+        consectetur, at, veritatis impedit error accusamus debitis delectus!
+        Maxime modi iure ducimus! Lorem ipsum dolor sit amet consectetur
+        adipisicing elit.<br />
+        Iure, alias non fugit eius quod quo! Ipsam vitae voluptatem deserunt
+        saepe aperiam reiciendis labore velit.<br />
+        Ex maxime natus cum perspiciatis omnis.
+      </p>
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-linkedin"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+      </div>
+      <p>Made With <i class="fa fa-heart-o"></i> by <b>Kingsings</b></p>
+    </section>
+
+    <script>
+      // -----------Script For Toggle Menu----------
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
   </body>
 </html>
-
-<!-- <div class="nav-bar">
-  <img src="images/" alt="Web Logo" class="logo" />
-  <div class="nav-content-div">
-    <button class="home-btn">HOME</button>
-    <button class="about-btn">ABOUT</button>
-    <button class="course-btn">COURSE</button>
-    <button class="blog-btn">BLOG</button>
-    <button class="contactUs-btn">CONTACT</button>
-  </div>
-</div>
-<div class="container">
-  <button class="More-btn">Visit Us To Know More</button>
-</div> -->
